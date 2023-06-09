@@ -1,0 +1,234 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #B57F39 ;
+  }
+
+.container{
+    background-color: white;
+}
+
+.header{
+    padding-top: 30px;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 180px;
+    position: relative;
+    z-index: 0;
+    min-height: 350px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    white-space: nowrap;
+}
+
+li span{
+    white-space: nowrap;
+}
+
+.r-header{
+    padding:10px;
+    background-color:white;
+}
+
+.r-categorias{
+    padding:10px;
+    background-color:white;
+}
+h3{
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.list_categorias{
+    overflow-x: auto;
+    white-space: nowrap;
+    max-height: 90px;
+    align-items: center;
+    background-color:white;
+}
+.list_categorias button{
+    margin-left: 5px;
+    display: inline-block;
+    border-radius: 25px;
+}
+
+.card-produto{
+    padding:10px;
+    border-radius: 10px !important;
+    -webkit-box-shadow: -1px 6px 19px 7px rgb(120 120 120 / 17%);
+    cursor:pointer;
+    height: 180px;
+    position: relative;
+}
+.img-produto{
+    max-width: 100%;
+    border-radius: 10%;
+}
+.descricao_curta{
+    font-size: small;
+}
+h5{    
+    font-size: 1.2rem;
+}
+.preco{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;  
+    font-weight: bold;
+    color:green;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao_acao{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    position: relative;
+}
+
+.botao_acao span{
+    color:white;
+}
+
+.botao_acao i{
+    font-size: 25px;
+    color:white;
+    margin-top:8px;
+    margin-bottom: 5px;
+}
+
+.fundo_acao{
+    background-color:black;
+    width: 400px;
+    border-radius: 25px;
+    height: 80px;
+}
+
+.label_carrinho{
+    font-size: 15px;
+}
+
+.acao_ativo i{
+    color:yellow !important;
+    font-weight: bold;
+}
+
+.acao_ativo span{
+    color:yellow !important;
+    font-weight: bold;
+}
+
+.container_produtos{
+    background-color: white;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn_add input{
+    font-size: 20px !important;
+}
+
+.btn_add span{
+    font-size: 20px !important;
+    cursor:pointer;
+}
+
+.btn_remover i{
+    font-size:15px !important;
+}
+
+.valor_pedido{
+    font-size:20px;
+}
+
+.card_endereco{
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.radio_form{
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+}
+
+.valor_frete{
+    font-weight: bold;
+}
+.img_fp{
+    max-height:50px;
+}
+
+.timeline {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .timeline li span{
+    font-size: 12px;;
+  }
+
+  .timeline-item {
+    flex: 1;
+    text-align: center;
+  }
+
+  .timeline-item:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+
+  .timeline-item.active:before {
+    background-color: #007bff;
+  }
+
+  .timeline-item.active2 {
+    font-weight: bold;
+  }
+
+  .timeline-item.active:after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #00ff04;
+  }
+
+  .pedido {
+    background-color: #d1d3d4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .pedido strong {
+    font-weight: bold;
+  }

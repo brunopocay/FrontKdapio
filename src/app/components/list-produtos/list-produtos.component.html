@@ -1,0 +1,20 @@
+<div class='container row'>
+    
+    <div class="col-md-4" *ngFor="let produto of listProdutos">
+        <div class="card card-produto mb-2 p-3">
+            <div class="row">
+                <div class="col-12">
+                    <h5>{{ produto.nome }}</h5>
+                </div>
+                <div class="col-7">
+                    <p class="descricao_curta">{{ produto.descricao }}</p>                      
+                </div>
+                <div class="col-5">
+                    <img class="img-produto" src="https://app.kdapio.com.br{{ produto.imgUrl.replace('..','') }}"/>
+                </div>
+            </div>
+            <h5 class="preco">{{ produto.preco |  currency:'BRL' }}</h5>
+        </div>
+    </div>
+    
+</div>
