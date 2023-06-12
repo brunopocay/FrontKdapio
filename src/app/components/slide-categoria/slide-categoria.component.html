@@ -1,13 +1,13 @@
 <div class="row list_categorias mt-2 mb-2 sticky-top">
-    <div class="mb-4" *ngFor="let categorias of listCategorias">
-        <button (onclick)="scrollToDiv(categorias.id.toString())" type="button" class="btn btn-outline-secondary">{{ categorias.nome }}</button>
+    <div class="ml-2 mb-4" *ngFor="let categorias of listCategorias">
+        <button (onclick)="scrollToDiv(categorias.categoriaId)" type="button" class="btn btn-outline-secondary">{{ categorias.nome }}</button>
     </div>
 </div>
 
 <div class="mb-4" *ngFor="let categoria of listCategorias">
-    <div  id='categoria_{{categoria.id}}' className="col-12 mt-3">
+    <div  id='categoria_{{categoria.id}}' class="col-12 mt-3">
         <h3>{{categoria.nome}}</h3>
     </div>
-    <app-list-produtos [IdCategoria]=categoria.id></app-list-produtos>
+    <app-list-produtos [IdCategoria] = categoria.id></app-list-produtos>
 </div>
 

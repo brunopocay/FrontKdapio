@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComponentsService } from 'src/app/services/components.service';
+import { Produtos } from '../produtos';
 
 @Component({
   selector: 'app-slide-categoria',
@@ -8,7 +9,7 @@ import { ComponentsService } from 'src/app/services/components.service';
 })
 export class SlideCategoriaComponent implements OnInit {
 
-  listCategorias: any;
+  listCategorias: Produtos[] = [];
 
   constructor(private service: ComponentsService){}
 
@@ -19,8 +20,7 @@ export class SlideCategoriaComponent implements OnInit {
   }
 
   scrollToDiv(divId:string) {  
-      var element = document.getElementById('categoria_'+divId);
-      console.log(divId);
+      const element = document.getElementById('categoria_' + divId);      
       if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }

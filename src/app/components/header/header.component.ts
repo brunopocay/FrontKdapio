@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
     photo(): string{
       return `https://kdapio.com.br/votorella/fundo.jpg`
     } 
+    
     constructor() {
       
     }

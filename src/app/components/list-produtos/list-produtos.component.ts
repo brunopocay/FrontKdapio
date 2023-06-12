@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { ComponentsService } from 'src/app/services/components.service';
+import { Produtos } from '../produtos';
 
 @Component({
   selector: 'app-list-produtos',
@@ -7,10 +8,10 @@ import { ComponentsService } from 'src/app/services/components.service';
   styleUrls: ['./list-produtos.component.css']
 })
 export class ListProdutosComponent implements OnInit {
-  @Input()
-  IdCategoria: number;
+  
+  @Input() IdCategoria: number;
 
-  listProdutos: any;
+  listProdutos: Produtos[] = [];
 
   constructor(private service: ComponentsService){}
 
